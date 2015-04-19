@@ -6,7 +6,7 @@
   "devDependencies": {
     "gulp-concat": "^2.4.3",
     "lodash-node": "^2.4.1",
-    "path": "^0.11.14"
+    "path": "^0.11.14",
     "autoprefixer-loader": "^1.0.0",
     "bundle-loader": "^0.5.2",
     "chai": "*",
