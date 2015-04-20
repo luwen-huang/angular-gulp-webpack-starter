@@ -48,7 +48,9 @@ var starTrekApp = angular.module("starTrekApp", ['ui.router', 'oc.lazyLoad',
 		templateProvider: ['$q', function($q) {
 			var deferred = $q.defer();
 
-			require.ensure([], function() {
+			// note that the file name needs to be repeated in the require.ensure([...]) block 
+			// if you're going to use the uglifyJS plugin. It breaks otherwise.
+			require.ensure(['html!./captain-list/captainList.html'], function(require) {
 				var template = require('html!./captain-list/captainList.html');
 				deferred.resolve(template);
 			});

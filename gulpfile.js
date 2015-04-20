@@ -33,7 +33,10 @@ var webpackConfig = {
 		new webpack.ProvidePlugin({
 			_: "lodash",
 		}),
-	//      new webpack.optimize.UglifyJsPlugin()     // uncomment for production
+		// uncomment for production. comment out during dev
+		new webpack.optimize.UglifyJsPlugin({
+			mangle: false
+		}) 
 	]
 
 };
