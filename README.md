@@ -19,6 +19,7 @@ Install
 	git clone https://github.com/starterkits/frontend-starterkit-minimal.git
 	cd angular-gulp-webpack-starter
 	npm install
+	bower install
 
 Development
 -----------
